@@ -10,6 +10,8 @@ website:
         text: Home
       - href: about.qmd
         text: About
+      - href: evolution.qmd
+        text: Evolution
 
 format:
   html:
