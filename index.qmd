@@ -9,5 +9,6 @@ The Archival Doughnut is a visual metaphor aimed at gaining a better understandi
 The 'Archival Doughnut' was developed on KLM Flight 1251 from Amsterdam to Helsinki (22/05/2024) by Milan van Lange. More information about the doughnut will appear here in the near future.
 
 ```{r}
-1 + 1
+# This is where the R code goes
+print("There it is!")
 ```
