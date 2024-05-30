@@ -2,8 +2,4 @@
 title: "About"
 ---
 
-About this site
-
-```{r}
-1 + 1
-```
+About this site, there is not yet much to say. It was build by Milan van Lange, May 2024.
