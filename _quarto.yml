@@ -18,6 +18,5 @@ format:
     toc: true
 
 editor: visual
-execute:
-  freeze: auto
+
 

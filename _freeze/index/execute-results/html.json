@@ -1,8 +1,8 @@
 {
-  "hash": "514c7ec6c7fbb00679953da75e7af697",
+  "hash": "32375ee014186d5d47395e8a33163c62",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"The Archival Doughnut\"\n---\n\n\nThe purpose of this website is to share the Archival Doughnut to the world. We invite you to leave a comment. We hope the idea evolves in an open and collaborative way. Let's go!\n\nThe Archival Doughnut is a visual metaphor aimed at gaining a better understanding of the nature, scope, and impact of archival practices on historical records and to identify the important areas of source-critical and epistemological reflection in historical scholarship.\n\nThe 'Archival Doughnut' was developed on KLM Flight 1251 from Amsterdam to Helsinki (22/05/2024) by Milan van Lange. More information about the doughnut will appear here in the near future.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "markdown": "---\ntitle: \"The Archival Doughnut\"\n---\n\n\nThe purpose of this website is to share the Archival Doughnut as an idea to the world. We invite you to leave a comment. We hope the idea evolves in an open and collaborative way. Let's go!\n\nThe Archival Doughnut is a visual metaphor aimed at gaining a better understanding of the nature, scope, and impact of archival practices on historical records and to identify the important areas of source-critical and epistemological reflection in historical scholarship.\n\nThe 'Archival Doughnut' was developed on KLM Flight 1251 from Amsterdam to Helsinki (22/05/2024) by Milan van Lange. More information about the doughnut will appear here in the near future.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# This is where the R code goes\nprint(\"There it is!\")\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"There it is!\"\n```\n\n\n:::\n:::\n",
     "supporting": [],
     "filters": [
       "rmarkdown/pagebreak.lua"
