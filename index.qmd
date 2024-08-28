@@ -9,6 +9,57 @@ The Archival Doughnut is a visual metaphor aimed at gaining a better understandi
 The 'Archival Doughnut' was developed on KLM Flight 1251 from Amsterdam to Helsinki (22/05/2024) by Milan van Lange. More information about the doughnut will appear here in the near future.
 
 ```{r}
-# This is where the R code goes
-print("There it is!")
+
+# Plot the Doughnut
+library(ggplot2)
+
+# Function to generate circle points for the rings of the doughnut
+circle_segment <- function(center = c(0, 0), radius = 1, start_angle = 0, end_angle = 2 * pi, npoints = 100) {
+  angles <- seq(start_angle, end_angle, length.out = npoints)
+  data.frame(
+    x = center[1] + radius * cos(angles),
+    y = center[2] + radius * sin(angles)
+  )
+}
+
+# Number of segments in the doughnut
+n_segments <- 5
+
+# Generate the segments
+segments <- lapply(1:n_segments, function(i) {
+  start_angle <- (i - 1) * 2 * pi / n_segments
+  end_angle <- i * 2 * pi / n_segments
+  
+  # Outer circle points for the element
+  outer_circle <- circle_segment(center = c(0, 0), radius = 1, start_angle = start_angle, end_angle = end_angle, npoints = 100)
+  
+  # Inner circle points for the element
+  inner_circle <- circle_segment(center = c(0, 0), radius = 0.5, start_angle = start_angle, end_angle = end_angle, npoints = 100)
+  
+  # Reverse the order of the inner circle points
+  inner_circle <- inner_circle[rev(rownames(inner_circle)), ]
+  
+  # Combine outer and inner circle points
+  rbind(outer_circle, inner_circle)
+})
+
+# Assign colors to each element of the doughnut and labels
+colors <- c("#FF0000", "#FF6666", "#FF9999", "#FFCCCC", "#FFE6E6")
+labels <- c("Capture", "Digitize", "Organize", "Contextualize and Structure", "Pluralize")
+
+# Combine all segments into one data frame with a group identifier
+all_segments <- do.call(rbind, lapply(1:n_segments, function(i) {
+  cbind(segments[[i]], group = i)
+}))
+
+# Plot the segments
+ggplot(all_segments, aes(x = x, y = y, group = group, fill = factor(group))) +
+  geom_polygon(color = "black") +
+  scale_fill_manual(values = colors, labels = labels, name = "Elements") +
+  coord_fixed() +
+  theme_minimal() +
+  ggtitle("The Archival Doughnut") +
+  theme(legend.position = "right")
+
+# End of Script
 ```
