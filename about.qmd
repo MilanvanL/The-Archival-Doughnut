@@ -12,15 +12,17 @@ The ‘dough’ of the doughnut represents a varied series of archival practices
 
 The record-keeping practices and actions in the space within the two concentric rings can be categorised as follows:
 
-• Capture: Gathering, appraisal, collection, acquisition, harvesting, web-crawling, etc.
+**•** **Capture:** Gathering, appraisal, collection, acquisition, harvesting, web-crawling, etc.
 
-• Digitise: Scanning, transcription, Automated Text Recognition (ATR).
+**•** **Digitise:** Scanning, transcription, Automated Text Recognition (ATR).
 
-• Contextualise and structure: Metadata, (linguistic) enrichment, annotation, tagging (e.g., Named Entity Recognition).
+**•** **Contextualise and structure:** Metadata, (linguistic) enrichment, annotation, tagging (e.g., Named Entity Recognition).
 
-• Organise: Appraisal, description, categorisation.
+**• Organise:** Appraisal, description, categorisation.
 
-• Pluralise: Access, digital data sets, online access, and (re-)use.
+**• Pluralise:** Access, digital data sets, online access, and (re-)use.
+
+![Image of the archival doughnut by Milan van Lange](Doughnut_plot_v01_20240717.jpeg)
 
 **Outside the ‘dough’**
 
